@@ -1157,6 +1157,41 @@
     <script src="assets/js/particles-01.app.js"></script>
     <!-- Map Js -->
     <script src="assets/js/arshia.js"></script>
+    <script>
+        // security.js
 
+// Disable right-click context menu
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+// Disable F12 key and Ctrl+Shift+I combination
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+    e.preventDefault();
+  }
+});
+
+// Disable Ctrl+Shift+J combination (open Developer Tools in Chrome)
+document.addEventListener('keydown', function(e) {
+  if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+    e.preventDefault();
+  }
+});
+
+// Disable Ctrl+U (View Source)
+document.addEventListener('keydown', function(e) {
+  if (e.ctrlKey && e.key === 'u') {
+    e.preventDefault();
+  }
+});
+
+// Prevent default behavior of Ctrl+Shift+C
+document.addEventListener('keydown', function(e) {
+  if (e.ctrlKey && e.shiftKey && e.key === 'C') {
+    e.preventDefault();
+  }
+});
+    </script>
     </body>
 </html>
